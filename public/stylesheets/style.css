@@ -1,0 +1,74 @@
+body {
+	font-family: sans-serif;
+    background: #E0E0E1;
+	text-align: center;
+}
+
+#content {
+	width: 500px;
+	margin: auto;
+	text-align: left;
+}
+
+header {
+	text-align: center;
+}
+
+#btn-show-modal-question {
+	width: 100%;
+	padding: 0.75em;
+	font-size: 1.5em;
+}
+
+input[type="text"], .modal-content > input[type="button"] {
+	font-size: 1.25em;
+	padding: 0.5em;
+}
+
+input[type="button"] {
+	padding: 0.75em;
+	border: none;
+	background-color: #000;
+	color: white;
+}
+
+article {
+	margin-bottom: 2em;
+}
+
+article > h3 {
+	border-bottom: 1px dashed black;
+	padding: 0.25em;
+}
+.modal {
+	/* TODO: comment display: none out if using showModal */
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal.open {
+	display: block;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 25% auto; /* 15% from the top and centered */
+    padding: 20px;
+	vertical-align: center;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.answerbtn {
+	background-color: #000;
+	color: whitesmoke;
+	font-size: large;
+	height: 50px;
+	width: 120px;
+}
